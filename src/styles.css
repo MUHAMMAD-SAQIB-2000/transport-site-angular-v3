@@ -93,6 +93,7 @@ body {
   font-size: 34px;
   font-weight: 800;
   position: relative;
+  padding-top: 35px;
 }
 .section-separator {
   float: left;
