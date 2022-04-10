@@ -1,0 +1,7 @@
+.breadcrumb {
+    padding: 0px 84px;
+    padding-top: 20px;
+  }
+  .breadcrumb-item a {
+    color:  var(--navbar-link-clr);
+  }

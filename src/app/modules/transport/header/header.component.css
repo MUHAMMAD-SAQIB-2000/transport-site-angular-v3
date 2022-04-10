@@ -1,0 +1,248 @@
+/*======================================
+ ============ Top Header CSS ============
+ ======================================== */
+
+ .top-header {
+    background-color: var(--body-bg-2);
+    color: #000 !important;
+    padding: 15px 0;
+}
+
+.top-header-contact-box {
+    border: var(--border);
+    cursor: pointer;
+}
+.top-social-links{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 1%;
+}
+.top-social-links a{
+    width: 25px;
+    height: 25px;
+    line-height: 25px !important;
+    position: relative;
+    margin: 0 5px;
+    text-align: center;
+    display: inline-block;
+    color: #111;
+    
+    -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);  
+    -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
+    -o-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
+    transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+}
+.top-social-links a i,
+.top-social-links a span{
+    position: relative;
+    top: 2px;
+    left: 1px; 
+}
+.top-social-links a:before{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #111;
+    
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    
+    -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);  
+    -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
+    -o-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
+    transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    
+}
+.top-social-links a:hover{
+    color: #fff;
+}
+.top-social-links a:hover:before{
+    background: #111;
+}
+
+.top-header-contact-box-icon i {
+    color: var(--primary);
+    font-size: 14px;
+}
+
+.top-header-contact-box-txt a {
+    font-size: 13px;
+}
+
+.top-header-contact-box-icon {
+    padding: 5px 10px;
+    border-right: 1px solid #e8e8e8;
+}
+
+.top-header-contact-box-txt {
+    padding: 5px 10px;
+}
+.top-header-rightarea a{
+  color: var(--navbar-link-clr);
+  list-style: none;
+}
+/*======================================
+ ================ Navbar CSS ============
+ ======================================== */
+
+ .navbar {
+    background-color: var(--navbar-clr-bg);
+}
+.navbar .btn{
+  margin-top: 0px;
+}
+.nav-item {
+    padding: 0 8px;
+}
+
+.nav-link {
+    color: var(--navbar-link-clr) !important;
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    padding: 5px 0 !important;
+}
+
+.navbar-brand {
+    font-family: 'Cookie', cursive;
+    color: var(--navbar-link-clr) !important;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background: #6c84a0;
+    transition: .5s all ease;
+    -webkit-transition: .5s all ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+.btn{
+    margin-top: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--btn-clr-base);
+    outline: 2px solid var(--btn-clr-base);
+    padding: 10px 20px;
+    font-size: 14px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0px;
+    transition: color .3s;
+}
+
+.btn:hover{
+    color: #fff;
+    background-color: var(--btn-clr-hover);
+    outline: 3px solid #fff;
+    font-weight: 500;
+}
+
+.navbar-toggler {
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+  align-items: center;
+}
+
+.navbar-toggle-icon {
+    color: #fff;
+    font-size: 20px;
+}
+
+.nav-search-box {
+    position: relative;
+    padding: 0 12px 0 10px;
+}
+
+.nav-search-box1 {
+    display: inline;
+    position: relative;
+}
+
+#search-box,
+#search-box1 {
+    position: absolute;
+    bottom: -98px;
+    right: 0px;
+    width: 250px;
+    z-index: 9;
+    background-color: #fff;
+}
+
+.nav-search-icon i::before {
+    content: "\f002";
+}
+
+.nav-search-icon:not(.collapsed) i::before {
+    content: "\f00d";
+    font-size: 18px;
+}
+
+#search-box form,
+#search-box1 form {
+    padding: 15px;
+}
+
+#search-box .form-control {
+    box-shadow: none;
+}
+
+.form-icon {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    background: none;
+    border: none;
+}
+/*======================================
+ =============== Sidemenu CSS ===========
+ ======================================== */
+
+ .offcanvas-header {
+    display: block !important;
+}
+
+.offcanvas-header .btn-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    box-shadow: none !important;
+}
+
+.offcanvas-body::-webkit-scrollbar {
+    display: none;
+}

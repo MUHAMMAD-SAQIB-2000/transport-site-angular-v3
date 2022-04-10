@@ -19,6 +19,11 @@ import { VcmessageComponent } from './modules/transport/home/vcmessage/vcmessage
 import { StudentResponseComponent } from './modules/transport/home/student-response/student-response.component';
 import { OurStaffComponent } from './modules/transport/home/our-staff/our-staff.component';
 import { AbouttransportComponent } from './modules/transport/about/abouttransport/abouttransport.component';
+import { HeaderComponent } from './modules/transport/header/header.component';
+import { FooterComponent } from './modules/transport/footer/footer.component';
+import { BreadcrumbComponent } from './modules/transport/breadcrumb/breadcrumb.component';
+import { AboutusComponent } from './modules/transport/home/aboutus/aboutus.component';
+import { SliderComponent } from './modules/transport/home/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +45,11 @@ import { AbouttransportComponent } from './modules/transport/about/abouttranspor
     StudentResponseComponent,
     OurStaffComponent,
     AbouttransportComponent,
+    HeaderComponent,
+    FooterComponent,
+    BreadcrumbComponent,
+    AboutusComponent,
+    SliderComponent,
   ],
   imports: [
     BrowserModule
