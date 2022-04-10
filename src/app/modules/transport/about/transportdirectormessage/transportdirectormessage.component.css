@@ -1,74 +1,108 @@
-section.transport-director-message {
-  text-align: center;
-  position: relative;
-  padding: 50px 0;
-  padding-bottom: 50px;
-  background: #fff !important;
+/* transport-director-message Transport - Start */
+.transport-director-message {
+  background: var(--section-bg-1);
+}
+
+.transport-director-message .transport-director-message-container {
   width: 100%;
+  height: 100%;
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.transport-director-message-container .transport-director-message-text {
+  width: 50%;
+  padding: 50px;
+  padding-top: 0%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: start;
+  order: 2;
 }
 
-.transport-director-message .section {
-  width: 100%;
-  padding-bottom: 20px;
-}
-.transport-director-message .section .container {
-  width: 80%;
-  display: block;
-  margin: 0px auto;
-  padding: 50px 0px;
-}
-.transport-director-message .container h1::after {
-  content: "";
-  height: 5px;
-  width: 100px;
-  background-color: #c4d156;
-  border-radius: 25px;
-  display: block;
-  margin: auto;
-}
-.transport-director-message .content {
-  float: right;
-  width: 55%;
-}
-.transport-director-message .image-section {
-  float: left;
-  width: 40%;
-}
-.transport-director-message .image-section img {
-  width: 100%;
-}
-.transport-director-message .content .article h3 {
-  color: #a3a3a3;
-  font-size: 17px;
-  margin-bottom: 20px;
-}
-.transport-director-message .content .article p {
-  margin-top: 10px;
-  font-size: 14px;
-  line-height: 1.5;
-  padding-bottom: 20px;
+.transport-director-message-container .transport-director-message-text h4 {
+  font-size: var(--sub-heading-size);
+  font-family: var(--heading-font);
 }
 
-.transport-director-message .content-transport {
-  float: left;
-  width: 65%;
+.transport-director-message-container .transport-director-message-text p {
+  margin-left: 0px;
+  line-height: 1.4rem;
+  text-align: justify;
+  font-family: var(--para-font);
 }
-.transport-director-message .content-transport .article h3 {
-  margin-top: 20px;
-  color: #a3a3a3;
-  font-size: 17px;
-  margin-bottom: 20px;
-}
-.transport-director-message .content-transport .article p {
-  margin-top: 10px;
+
+.transport-director-message-container .transport-director-message-text .btn {
+  margin-top: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--btn-clr-base);
+  outline: 2px solid var(--btn-clr-base);
+  padding: 10px 20px;
   font-size: 14px;
-  line-height: 1.5;
-  padding-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0px;
+  transition: color 0.2s;
 }
-.transport-director-message .image-section-transport {
-  float: right;
-  width: 30%;
+
+.transport-director-message-container
+  .transport-director-message-text
+  .btn:hover {
+  color: #fff;
+  background-color: var(--btn-clr-hover);
+  outline: 3px solid #fff;
+  font-weight: 500;
 }
+
+.transport-director-message-container .transport-director-message-image {
+  order: 1;
+  width: 50%;
+}
+
+.transport-director-message .transport-director-message-img {
+  object-fit: cover;
+  border-radius: 10px;
+  /* width: 100%;
+  height: auto; */
+  width: 600px;
+  height: 400px;
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+  .transport-director-message .transport-director-message-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .transport-director-message-text,
+  .transport-director-message-image {
+    width: 100% !important;
+    max-width: 100%;
+  }
+  .transport-director-message-text {
+    padding: 10px !important;
+    padding-top: 20px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    order: 1;
+  }
+  .transport-director-message .transport-director-message-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* transport-director-message Transport - End */

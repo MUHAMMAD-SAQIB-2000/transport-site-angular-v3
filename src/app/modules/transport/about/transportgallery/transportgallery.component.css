@@ -1,11 +1,113 @@
-section.transport-gallery {
-  text-align: center;
+.transport-gallery {
+  padding-top: 40px;
+  background: var(--section-bg-1);
+}
+
+.gallery {
   position: relative;
-  padding: 50px 0;
-  padding-bottom: 50px;
-  background: #fff !important;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 16px;
+  row-gap: 2em;
+  grid-auto-flow: dense;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 20px;
+}
+
+.box {
+  background-size: cover;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+
+.box img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0px 15px 25px rgba(131, 41, 108, 0.7);
+  transition: all 1s ease-in-out;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.full-img {
+  position: absolute;
+  height: 85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.7);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Dynamic Classes */
+
+.full-img.open {
+  transform: translate(-50%, -50%) scale(1);
+  border-radius: 20px;
+  box-shadow: 0px 15px 25px rgba(38, 222, 129, 0.4);
+}
+
+.modal.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal.open img {
+  cursor: pointer;
+}
+
+.gallery.blur {
+  filter: blur(7px);
+}
+
+.close {
+  display: none;
+}
+
+.modal.open .close {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 5%;
+  right: 5%;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1056px) {
+  .modal.open .close {
+    top: 2%;
+    right: 5%;
+  }
+  .full-img {
+    width: calc(100vw - 20%);
+    height: calc(100vh - 40%);
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .box {
+    width: 70vw;
+    height: auto;
+  }
+  .gallery {
+    margin: auto;
+  }
+  .full-img {
+    width: calc(100vw - 20%);
+    height: calc(100vh - 50%);
+  }
 }

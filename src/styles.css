@@ -83,6 +83,7 @@ body {
   line-height: 20px;
   max-width: 550px;
   margin: 0 auto;
+  text-align: center;
 }
 .section-title .section-heading {
   float: left;
@@ -92,6 +93,7 @@ body {
   font-size: 34px;
   font-weight: 800;
   position: relative;
+  padding-top: 35px;
 }
 .section-separator {
   float: left;
@@ -105,11 +107,11 @@ body {
   left: 50%;
   top: 0;
   height: 3px;
-  width: 50px;
+  width: 100px;
   border-radius: 3px;
   z-index: 2;
   background-color: #007aff;
-  margin-left: -25px;
+  margin-left: -50px;
 }
 h1{
   font-family: var(--heading-font);
@@ -138,3 +140,26 @@ outline: 3px solid #fff;
 font-weight: 500;
 }
 /* Global Section Styling - End*/
+
+
+.btn{
+  margin-top: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--btn-clr-base);
+  outline: 2px solid var(--btn-clr-base);
+  padding: 10px 20px;
+  font-size: 14px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0px;
+  transition: color .3s;
+}
+
+.btn:hover{
+  color: #fff;
+  background-color: var(--btn-clr-hover);
+  outline: 3px solid #fff;
+  font-weight: 500;
+}
