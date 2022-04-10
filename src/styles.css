@@ -1,1 +1,100 @@
-/* You can add global styles to this file, and also import other style files */
+/* Clearing Defaults - Start */
+html {
+  overflow-x: hidden;
+  height: 100%;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* Clearing Defaults - End */
+
+/* Global Variables - Start */
+:root {
+  --heading-font: "Recoleta", sans-serif;
+  --para-font: "Poppins";
+  --btn-font: "Montserrat";
+
+  --heading-weight: 800;
+  --para-weight: 500;
+
+  --heading-size: 64px;
+  --sub-heading-size: 44px;
+  --para-size: 18px;
+  --btn-size: 20px;
+  --cta-size: 20px;
+
+  --body-bg-1: #fff3a7;
+  --body-bg-2: #fffdb0;
+  --body-bg-3: #f2d6ad;
+
+  --heading-clr-light: #fff;
+  --heading-clr-dark-1: #171717;
+  --heading-clr-dark-2: #333;
+
+  --para-clr-1: #232023;
+  --para-clr-2: #373737;
+
+  --btn-clr-base: #343d70;
+  --btn-clr-hover: #83296c;
+
+  --border: #ebbb7b 5px solid;
+
+  --navbar-clr-bg: #f2d6ad;
+  --navbar-link-clr: #a8b1c8;
+  --navbar-link-clr-hover: #6c84a0;
+}
+/* Global Variables - End */
+
+/* Site Styling - Start */
+body {
+  background-color: var(--body-bg-2);
+  width: 100%;
+  max-width: 100%;
+}
+
+
+
+/* Global Section Styling - Start*/
+.section-title {
+  float: left;
+  position: relative;
+  width: 100%;
+  padding-bottom: 40px;
+}
+.section-title .section-para {
+  color: #7d93b2;
+  font-size: 18px;
+  line-height: 20px;
+  max-width: 550px;
+  margin: 0 auto;
+}
+.section-title .section-heading {
+  float: left;
+  width: 100%;
+  text-align: center;
+  color: #007aff;
+  font-size: 34px;
+  font-weight: 800;
+  position: relative;
+}
+.section-separator {
+  float: left;
+  width: 100%;
+  position: relative;
+  margin: 20px 0;
+}
+.section-separator:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 3px;
+  width: 50px;
+  border-radius: 3px;
+  z-index: 2;
+  background-color: #007aff;
+  margin-left: -25px;
+}
+/* Global Section Styling - End*/
