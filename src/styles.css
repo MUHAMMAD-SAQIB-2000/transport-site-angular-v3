@@ -12,6 +12,9 @@ html {
 
 /* Global Variables - Start */
 :root {
+  --section-bg-1: #f3f2f2;
+  --section-bg-2: #fff;
+
   --heading-font: "Recoleta", sans-serif;
   --para-font: "Poppins";
   --btn-font: "Montserrat";
@@ -49,7 +52,7 @@ html {
 
 /* Site Styling - Start */
 body {
-  background-color: var(--body-bg-2);
+  background-color: var(--navbar-link-clr);
   width: 100%;
   max-width: 100%;
 }
@@ -75,7 +78,7 @@ body {
   padding-bottom: 40px;
 }
 .section-title .section-para {
-  color: #7d93b2;
+  color: #7d93b2 !important;
   font-size: 18px;
   line-height: 20px;
   max-width: 550px;

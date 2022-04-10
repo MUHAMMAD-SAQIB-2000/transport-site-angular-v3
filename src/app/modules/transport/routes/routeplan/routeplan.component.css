@@ -43,6 +43,7 @@ section.route-plan {
 
 .route-plan-container {
   padding: 0px 30px;
+  overflow-x:auto;
 }
 .route-plan-container table,
 .route-plan-container td,

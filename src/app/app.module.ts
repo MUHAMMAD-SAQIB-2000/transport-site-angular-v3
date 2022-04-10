@@ -18,6 +18,7 @@ import { TransportrepairserviceComponent } from './modules/transport/about/trans
 import { VcmessageComponent } from './modules/transport/home/vcmessage/vcmessage.component';
 import { StudentResponseComponent } from './modules/transport/home/student-response/student-response.component';
 import { OurStaffComponent } from './modules/transport/home/our-staff/our-staff.component';
+import { AbouttransportComponent } from './modules/transport/about/abouttransport/abouttransport.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { OurStaffComponent } from './modules/transport/home/our-staff/our-staff.
     VcmessageComponent,
     StudentResponseComponent,
     OurStaffComponent,
+    AbouttransportComponent,
   ],
   imports: [
     BrowserModule

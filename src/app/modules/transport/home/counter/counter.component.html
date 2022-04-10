@@ -1,47 +1,40 @@
-<!--Counter-->
-<div class="container">
-    <div class="hero-title">
-        <h1>Members</h1>
-        <p class="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore numquam, inventore dolore ipsum repudiandae reiciendis consequuntur magnam voluptatum explicabo modi earum at nesciunt porro perspiciatis illo nisi vitae velit eveniet.</p>
-
-       </div>
-       <div class="bgimage">
-
-       </div>
-       <div class="row card-con">
-           <div class="col">
-               <div class="counter-box">
-                   <i class="fa fa-bus" ></i>
-                   <h2 class="counter">110</h2>
-                   <h4>BUSES</h4>
-               </div>
-           </div>
-           <div class="col">
-               <div class="counter-box">
-                   <i class="fa fa-male" ></i>
-                   <h2 class="counter">50</h2>
-                   <h4>DRIVERS</h4>
-               </div>
-           </div>
-           <div class="col">
-               <div class="counter-box">
-                   <i class="fa fa-users" ></i>
-                   <h2 class="counter">10000</h2>
-                   <h4>STUDENTS</h4>
-               </div>
-           </div>
-       </div>
-</div>
+<section class="section counter">
+  <!--Counter-->
+  <div class="container">
+    <div class="row card-con">
+      <div class="col">
+        <div class="counter-box">
+          <i class="fa fa-bus"></i>
+          <h2 class="counter">110</h2>
+          <h4>BUSES</h4>
+        </div>
+      </div>
+      <div class="col">
+        <div class="counter-box">
+          <i class="fa fa-male"></i>
+          <h2 class="counter">50</h2>
+          <h4>DRIVERS</h4>
+        </div>
+      </div>
+      <div class="col">
+        <div class="counter-box">
+          <i class="fa fa-users"></i>
+          <h2 class="counter">10000</h2>
+          <h4>STUDENTS</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 <script src="jquery.counterup.min.js"></script>
 
 <script>
-    jQuery(document).ready(function($){
-
-       $('.counter').counterUp({
-delay: 10,
-time: 1000
-});
+  jQuery(document).ready(function ($) {
+    $(".counter").counterUp({
+      delay: 10,
+      time: 1000,
     });
+  });
 </script>
