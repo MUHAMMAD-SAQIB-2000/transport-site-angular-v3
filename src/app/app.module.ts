@@ -2,6 +2,11 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { TransportComponent } from './modules/transport/transport.component';
+import { HomeComponent } from './modules/transport/home/home.component';
+import { ContactComponent } from './modules/transport/contact/contact.component';
+import { AboutComponent } from './modules/transport/about/about.component';
+import { RoutesComponent } from './modules/transport/routes/routes.component';
 // import { TransportComponent } from './modules/transport/transport.component';
 // import { HomeComponent } from './modules/transport/home/home.component';
 // import { ContactComponent } from './modules/transport/contact/contact.component';
@@ -24,6 +29,11 @@ import { AppComponent } from './app.component';
 @NgModule({
   declarations: [
     AppComponent,
+    TransportComponent,
+    HomeComponent,
+    ContactComponent,
+    AboutComponent,
+    RoutesComponent,
     // TransportComponent,
     // HomeComponent,
     // ContactComponent,
