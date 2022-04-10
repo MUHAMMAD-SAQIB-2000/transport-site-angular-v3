@@ -21,9 +21,12 @@ import { OurStaffComponent } from './modules/transport/home/our-staff/our-staff.
 import { AbouttransportComponent } from './modules/transport/about/abouttransport/abouttransport.component';
 import { HeaderComponent } from './modules/transport/header/header.component';
 import { FooterComponent } from './modules/transport/footer/footer.component';
-import { BreadcrumbComponent } from './modules/transport/breadcrumb/breadcrumb.component';
+import { BreadcrumbsComponent } from './modules/transport/breadcrumb/breadcrumbs.component';
 import { AboutusComponent } from './modules/transport/home/aboutus/aboutus.component';
 import { SliderComponent } from './modules/transport/home/slider/slider.component';
+import { AppRoutingModule } from './app-routing.module';
+import { NavbarComponent } from './modules/transport/navbar/navbar.component';
+import { MainSectionComponent } from './modules/transport/home/main-section/main-section.component';
 
 @NgModule({
   declarations: [
@@ -47,12 +50,15 @@ import { SliderComponent } from './modules/transport/home/slider/slider.componen
     AbouttransportComponent,
     HeaderComponent,
     FooterComponent,
-    BreadcrumbComponent,
+    BreadcrumbsComponent,
     AboutusComponent,
     SliderComponent,
+    NavbarComponent,
+    MainSectionComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

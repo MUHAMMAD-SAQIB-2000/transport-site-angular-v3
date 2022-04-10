@@ -12,7 +12,7 @@ html {
 
 /* Global Variables - Start */
 :root {
-  --section-bg-1: #f3f2f2;
+  --section-bg-1: #fcfcfd;
   --section-bg-2: #fff;
 
   --heading-font: "Recoleta", sans-serif;
@@ -55,6 +55,7 @@ body {
   background-color: var(--navbar-link-clr);
   width: 100%;
   max-width: 100%;
+  overflow-x: hidden;
 }
 
 
@@ -89,7 +90,7 @@ body {
   float: left;
   width: 100%;
   text-align: center;
-  color: #007aff;
+  color: #0077b5;
   font-size: 34px;
   font-weight: 800;
   position: relative;
@@ -110,7 +111,7 @@ body {
   width: 100px;
   border-radius: 3px;
   z-index: 2;
-  background-color: #007aff;
+  background-color: #0077b5;
   margin-left: -50px;
 }
 h1{
