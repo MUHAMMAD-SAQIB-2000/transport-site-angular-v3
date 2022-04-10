@@ -7,65 +7,74 @@ section.vc-message {
   z-index: 1;
   width: 100%;
 }
-.vc-message .section {
+.vc-message .vc-message-container {
   width: 100%;
-  padding-bottom: 20px;
-}
-.vc-message .section .container {
-  width: 80%;
-  display: block;
-  margin: 0px auto;
-  padding: 50px 0px;
-}
-.vc-message .container h1::after {
-  content: "";
-  height: 5px;
-  width: 100px;
-  background-color: #c4d156;
-  border-radius: 25px;
-  display: block;
-  margin: auto;
-}
-.vc-message .content {
-  float: right;
-  width: 55%;
-}
-.vc-message .image-section {
-  float: left;
-  width: 40%;
-}
-.vc-message .image-section img {
-  width: 100%;
-}
-.vc-message .content .article h3 {
-  color: #a3a3a3;
-  font-size: 17px;
-  margin-bottom: 20px;
-}
-.vc-message .content .article p {
-  margin-top: 10px;
-  font-size: 14px;
-  line-height: 1.5;
-  padding-bottom: 20px;
+  height: 100%;
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
-.vc-message .content-transport {
-  float: left;
-  width: 65%;
+.vc-message-container .vc-message-text {
+  width: 50%;
+  padding: 50px;
+  padding-top: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: start;
+  order: 1;
 }
-.vc-message .content-transport .article h3 {
-  margin-top: 20px;
-  color: #a3a3a3;
-  font-size: 17px;
-  margin-bottom: 20px;
+
+.vc-message-container .vc-message-text h4 {
+  font-size: var(--sub-heading-size);
+  font-family: var(--heading-font);
 }
-.vc-message .content-transport .article p {
-  margin-top: 10px;
+
+.vc-message-container .vc-message-text p {
+  margin-left: 0px;
+  line-height: 1.4rem;
+  text-align: justify;
+  font-family: var(--para-font);
+}
+
+.vc-message-container .vc-message-text .btn {
+  margin-top: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--btn-clr-base);
+  outline: 2px solid var(--btn-clr-base);
+  padding: 10px 20px;
   font-size: 14px;
-  line-height: 1.5;
-  padding-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0px;
+  transition: color 0.2s;
 }
-.vc-message .image-section-transport {
-  float: right;
-  width: 30%;
+
+.vc-message-container .vc-message-text .btn:hover {
+  color: #fff;
+  background-color: var(--btn-clr-hover);
+  outline: 3px solid #fff;
+  font-weight: 500;
 }
+
+
+.vc-message-container .vc-message-image {
+  order: 2;
+  width: 50%;
+}
+
+.vc-message .vc-message-img {
+  object-fit: cover;
+  border-radius: 10px;
+  width: 600px;
+  height: 400px;
+}
+/* vc-message Transport - End */
+

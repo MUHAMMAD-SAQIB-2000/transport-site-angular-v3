@@ -42,3 +42,5 @@ var j2 = new Swiper(".testimonials-carousel .swiper-container", {
 $(document).ready(function () {
   initParadoxWay();
 });
+
+

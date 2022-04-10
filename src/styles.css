@@ -40,7 +40,7 @@ html {
   --para-clr-2: #373737;
 
   --btn-clr-base: #343d70;
-  --btn-clr-hover: #83296c;
+  --btn-clr-hover: rgb(131, 41, 108);
 
   --border: #ebbb7b 5px solid;
 
@@ -105,10 +105,12 @@ body {
   left: 50%;
   top: 0;
   height: 3px;
-  width: 50px;
+  width: 100px;
   border-radius: 3px;
   z-index: 2;
   background-color: #007aff;
-  margin-left: -25px;
+  margin-left: -50px;
 }
 /* Global Section Styling - End*/
+
+

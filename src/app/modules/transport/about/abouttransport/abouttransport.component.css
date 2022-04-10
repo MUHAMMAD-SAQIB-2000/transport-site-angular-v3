@@ -69,7 +69,40 @@
 .about-transport .about-img {
   object-fit: cover;
   border-radius: 10px;
-  width: 100%;
-  height: auto;
+  /* width: 100%;
+  height: auto; */
+  width: 600px;
+  height: 400px;
 }
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+  .about-transport .about-transport-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .about-transport-text,
+  .about-transport-image {
+    width: 100% !important;
+    max-width: 100%;
+  }
+  .about-transport-text {
+    padding: 10px !important;
+    padding-top: 20px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    order: 1;
+  }
+  .about-transport .about-img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
 /* About Transport - End */

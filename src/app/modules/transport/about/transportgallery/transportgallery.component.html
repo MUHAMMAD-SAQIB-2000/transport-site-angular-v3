@@ -3,12 +3,64 @@
     <div class="section-title">
       <h2 class="section-heading">Transport Gallery</h2>
       <span class="section-separator"></span>
-      <p class="section-para">
-        Let's have a look at buses in our university.
-      </p>
+      <p class="section-para">Let's have a look at buses in our university.</p>
     </div>
   </div>
   <div class="transport-gallery-images">
+    <!-- Gallery Start
+        when you add a new image here be sure to add its exact name in alt without file extension so that the browser may render it in full view without any error
+    -->
 
+    <div class="gallery">
+      <div class="box">
+        <img src="../../../../../assets/buses/raja-bus.jpg" alt="raja-bus" />
+      </div>
+      <div class="box">
+        <img src="../../../../../assets/buses/bus-8.jpg" alt="bus-8" />
+      </div>
+      <div class="box">
+        <img src="../../../../../assets/buses/bus-9.jpg" alt="bus-9" />
+      </div>
+      <div class="box">
+        <img src="../../../../../assets/buses/bus-10.jpg" alt="bus-10" />
+      </div>
+      <div class="box">
+        <img src="../../../../../assets/buses/private-bus.jpg" alt="5" />
+      </div>
+    </div>
+    <div class="modal">
+      <img class="close" src="../../../../../assets/cancel.png" alt="" />
+      <img src="../../../../../assets/buses/bus-10.jpg" alt="" class="full-img" />
+    </div>
+    <!-- Gallery End -->
   </div>
 </section>
+
+<script>
+  // Image gallery JS Code
+  const fullImg = document.querySelector(".full-img");
+  const smallImg = document.querySelectorAll(".gallery img");
+  const modal = document.querySelector(".modal");
+  const gallery = document.querySelector(".gallery");
+  const close = document.querySelector(".close");
+
+  // console.log(smallImg);
+  smallImg.forEach(function (img) {
+    img.addEventListener("click", function () {
+      modal.classList.add("open");
+      fullImg.classList.add("open");
+      gallery.classList.add("blur");
+
+      // Changin' the images dynamically
+      const originalQuality = img.getAttribute("alt");
+      // fullImg.src = `/app/images/1.jpeg`;
+      fullImg.src = `/app/images/${originalQuality}.jpeg`;
+    });
+  });
+
+  close.addEventListener("click", function (e) {
+    modal.classList.remove("open");
+    fullImg.classList.remove("open");
+    gallery.classList.remove("blur");
+  });
+</script>
