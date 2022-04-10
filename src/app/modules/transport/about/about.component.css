@@ -1,0 +1,63 @@
+/* About us*/
+.section {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .section .container {
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+    padding: 50px 0px;
+  }
+  .container h1::after {
+    content: "";
+    height: 5px;
+    width: 100px;
+    background-color: #c4d156;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+  }
+  .content {
+    float: right;
+    width: 55%;
+  }
+  .image-section {
+    float: left;
+    width: 40%;
+  }
+  .image-section img {
+    width: 100%;
+  }
+  .content .article h3 {
+    color: #a3a3a3;
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+  .content .article p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+  }
+  
+  .content-transport {
+    float: left;
+    width: 65%;
+  }
+  .content-transport .article h3 {
+    margin-top: 20px;
+    color: #a3a3a3;
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+  .content-transport .article p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+  }
+  .image-section-transport {
+    float: right;
+    width: 30%;
+  }

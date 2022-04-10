@@ -1,0 +1,44 @@
+/*Latest News*/
+.news-container {
+    padding-top: 50px;
+  }
+  .ticker {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 60px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .news {
+    width: 76%;
+    background: #cc4444;
+    padding: 0 1%;
+  }
+  .title {
+    width: 20%;
+    text-align: center;
+    background: #c81c1c;
+    position: relative;
+  }
+  .title:after {
+    position: absolute;
+    content: "";
+    right: -20%;
+    border-left: 20px solid #c81c1c;
+    border-top: 33px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 33px solid transparent;
+    top: 0px;
+  }
+  .title h5 {
+    font-size: 18px;
+    margin: 10.2% 0px;
+    text-transform: uppercase;
+  }
+  .news marquee {
+    font-size: 18px;
+    text-align: center;
+    padding-top: 17px;
+  }
+  

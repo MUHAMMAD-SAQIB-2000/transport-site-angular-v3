@@ -1,0 +1,96 @@
+/* Contact Us*/
+.container {
+    clear: both;
+    width: 80%;
+    margin: 50px auto;
+  }
+  
+  .contact-box {
+    background: #fffdb0;
+    display: flex;
+  }
+  .contact-left {
+    flex-basis: 60%;
+    padding: 40px 60px;
+  }
+  .contact-right {
+    flex-basis: 40%;
+    padding: 40px;
+    background: #f2d6ad;
+    color: white;
+  }
+  h1 {
+    margin-top: 5px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .container p {
+    margin-bottom: 40px;
+  }
+  .input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .input-row.input-group {
+    flex-basis: 45%;
+  }
+  input {
+    width: 100%;
+    border: none;
+    border-bottom: 1.5px solid #ebbb7b;
+    outline: none;
+    padding-bottom: 5px;
+    background: #fff3a7;
+  }
+  textarea {
+    width: 100%;
+    border: 1.5px solid #ebbb7b;
+    outline: none;
+    padding: 10px;
+    background: #fff3a7;
+    box-sizing: border-box;
+  }
+  label {
+    margin-bottom: 5px;
+    display: block;
+  }
+  button {
+    background: #343d70;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+  }
+  button :hover {
+    color: #fff;
+    background-color: #83296c;
+    transition: 3s ease;
+  }
+  .contact-left h3 {
+    color: #171717;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  .contact-right {
+    color: #232023;
+    font-family: "Poppins";
+  }
+  .contact-right h3 {
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  tr td:first-child {
+    padding-right: 20px;
+  }
+  tr td {
+    padding-top: 20px;
+  }
+  .contact-right p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
