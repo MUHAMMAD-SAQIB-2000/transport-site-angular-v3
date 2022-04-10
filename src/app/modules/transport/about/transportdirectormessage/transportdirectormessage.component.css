@@ -1,6 +1,6 @@
 /* transport-director-message Transport - Start */
 .transport-director-message {
-  background: #fcfcfd !important;
+  background: var(--section-bg-1);
 }
 
 .transport-director-message .transport-director-message-container {

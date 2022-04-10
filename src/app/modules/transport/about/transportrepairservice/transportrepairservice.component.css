@@ -1,6 +1,6 @@
 /* transport-repair-service Transport - Start */
 .transport-repair-service {
-  background: #fcfcfd !important;
+  background: var(--section-bg-2);
 }
 
 .transport-repair-service .transport-repair-service-container {

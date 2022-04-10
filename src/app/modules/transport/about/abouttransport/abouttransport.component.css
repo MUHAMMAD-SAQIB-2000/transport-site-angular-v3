@@ -1,6 +1,6 @@
 /* About Transport - Start */
 .about-transport {
-  background: #fcfcfd !important;
+  background: var(--section-bg-2);
 }
 
 .about-transport .about-transport-container {
@@ -43,6 +43,7 @@
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
+  background: #fff;
   color: var(--btn-clr-base);
   outline: 2px solid var(--btn-clr-base);
   padding: 10px 20px;
