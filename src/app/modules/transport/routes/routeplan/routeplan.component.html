@@ -1,0 +1,50 @@
+<!-- Transport Route Plan - Start-->
+<section class="route-plan">
+  <div class="container">
+    <div class="section-title">
+      <h2 class="section-heading">Transport Route Plan</h2>
+      <span class="section-separator"></span>
+      <p class="section-para">Below is the Route Plan for Transport.</p>
+    </div>
+  </div>
+ <div class="route-search">
+  <form action="">
+    <label for="search">Search Route:</label>
+    <input type="text" id="search" name="search"><br><br>
+  </form>
+ </div>
+  <div class="route-plan-container">
+    <table>
+      <tr>
+        <th colspan="11" class="tbl-header">Transport Route Plan</th>
+      </tr>
+      <tr>
+        <th class="tbl-heading">Sr#</th>
+        <th class="tbl-heading">Registration No.</th>
+        <th class="tbl-heading">Route #</th>
+        <th class="tbl-heading">Status</th>
+        <th class="tbl-heading">Time</th>
+        <th class="tbl-heading">City</th>
+        <th class="tbl-heading">Starting Point</th>
+        <th class="tbl-heading">Stops</th>
+        <th class="tbl-heading">Driver Name</th>
+        <th class="tbl-heading">Cell No.</th>
+        <th class="tbl-heading">Bus Helper</th>
+      </tr>
+      <tr class="tbl-data" *ngFor="let route of routes">
+        <td>{{route.srNumber}}</td>
+        <td>{{route.registrationNumber}}</td>
+        <td>{{route.routeNumber}}</td>
+        <td>{{route.Status}}</td>
+        <td>{{route.Time}}</td>
+        <td>{{route.City}}</td>
+        <td>{{route.startingPoint}}</td>
+        <td>{{route.stops}}</td>
+        <td>{{route.driverName}}</td>
+        <td>{{route.cellNumber}}</td>
+        <td>{{route.busHelper}}</td>
+      </tr>
+    </table>
+  </div>
+</section>
+<!-- Transport Route Plan - End-->

@@ -1,0 +1,90 @@
+/* Transport Route Plan - Start */
+section.route-plan {
+  text-align: center;
+  position: relative;
+  padding: 30px 0;
+  padding-bottom: 50px;
+  background: #fff !important;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.route-search{
+  margin-top: -30px;
+  text-align: start;
+  padding: 10px 0px;
+  margin-left: 30px;
+}
+.route-search input[type=text] {
+  width: 30%;
+  padding: 10px 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+.route-search input[type=text]:focus{
+  border: 3px solid var(--btn-clr-hover);
+  background-color: #fff;
+}
+
+
+.route-search label {
+  padding-left: 20px;
+  font-family: var(--heading-font);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #333;
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.route-plan-container {
+  padding: 0px 30px;
+}
+.route-plan-container table,
+.route-plan-container td,
+.route-plan-container th {
+  border: 1px solid #333;
+  text-align: left;
+}
+.route-plan-container table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.route-plan-container th,
+td {
+  padding: 8px;
+}
+
+.route-plan-container tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.route-plan-container .tbl-header {
+  background-color: var(--btn-clr-hover);
+  text-align: center;
+  font-family: var(--heading-font);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: white;
+}
+.route-plan-container .tbl-heading {
+  background-color: var(--btn-clr-base);
+  font-family: var(--para-font);
+  letter-spacing: 1.5px;
+  font-size: 16px;
+  color: white;
+}
+
+.route-plan-container .tbl-data:hover {
+  background-color: var(--btn-clr-hover);
+  opacity: 0.7;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Transport Route Plan - End */
