@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import routeplan from '../../../../data/routes.json';
+import routeplan from '../../data/routes.json';
 import { Route } from 'src/app/interfaces/Route';
 import { RouteService } from './route.service';
 

@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Route } from '../../../../interfaces/Route';
+import { Route } from '../../interfaces/Route';
 
 @Pipe({
   name: 'searchfilter'

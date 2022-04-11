@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { TransportComponent } from './modules/transport/transport.component';
-import { ContactComponent } from './modules/transport/contact/contact.component';
-import { AboutComponent } from './modules/transport/about/about.component';
-import { RoutesComponent } from './modules/transport/routes/routes.component';
-import { HomeComponent } from './modules/transport/home/home.component';
+import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
+import { RoutesComponent } from './routes/routes.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path: '/home', component: HomeComponent },
