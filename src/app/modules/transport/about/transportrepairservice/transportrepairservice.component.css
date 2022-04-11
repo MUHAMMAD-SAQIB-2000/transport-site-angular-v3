@@ -23,7 +23,7 @@
   justify-content: space-around;
   align-items: flex-start;
   text-align: start;
-  order: 2;
+  order: 1;
 }
 
 .transport-repair-service-container .transport-repair-service-text h4 {
@@ -62,7 +62,7 @@
 
 
 .transport-repair-service-container .transport-repair-service-image {
-  order: 1;
+  order: 2;
   width: 50%;
 }
 

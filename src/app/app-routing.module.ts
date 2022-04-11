@@ -8,7 +8,6 @@ import { RoutesComponent } from './modules/transport/routes/routes.component';
 import { HomeComponent } from './modules/transport/home/home.component';
 
 const routes: Routes = [
-  { path: '/', component: HomeComponent },
   { path: '/home', component: HomeComponent },
   { path: '/contact', component: ContactComponent },
   { path: '/about', component: AboutComponent },

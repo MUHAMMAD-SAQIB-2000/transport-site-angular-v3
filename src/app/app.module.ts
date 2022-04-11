@@ -27,9 +27,15 @@ import { SliderComponent } from './modules/transport/home/slider/slider.componen
 import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './modules/transport/navbar/navbar.component';
 import { MainSectionComponent } from './modules/transport/home/main-section/main-section.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { SearchfilterPipe } from './modules/transport/routes/routeplan/searchfilter.pipe';
+
+
 
 @NgModule({
   declarations: [
+    SearchfilterPipe,
     AppComponent,
     TransportComponent,
     HomeComponent,
@@ -58,7 +64,10 @@ import { MainSectionComponent } from './modules/transport/home/main-section/main
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
