@@ -9,22 +9,24 @@
 }
 
 .gallery {
-  position: relative;
+  position: absolute;
+  top: 0;
+  /* position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
-  /* position: relative;
+  align-items: flex-start; */
+  position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 16px;
   row-gap: 2em;
   grid-auto-flow: dense;
-  /* text-align: center;
+  text-align: center;
   padding: 10px 20px;
-  margin: 20px; */
+  margin: 20px;
 }
 
 .box {

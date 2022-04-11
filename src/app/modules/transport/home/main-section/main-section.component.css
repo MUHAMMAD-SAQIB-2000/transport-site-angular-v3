@@ -30,5 +30,7 @@
 }
 
 .btn-route{
+  border: none;
+  outline: 2px solid #fff;
   color: #fff;
 }

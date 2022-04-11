@@ -68,7 +68,7 @@
 }
 
 .transport-director-message .transport-director-message-img {
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 10px;
   /* width: 100%;
   height: auto; */

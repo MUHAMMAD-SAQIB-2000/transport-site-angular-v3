@@ -12,6 +12,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  vertical-align: middle;
   padding: 30px 10%;
   background-color: #f4f4f4;
 }
@@ -22,6 +23,7 @@ header {
 }
 
 .nav_links {
+  padding-top: 12px;
   list-style: none;
 }
 .nav_links li {
